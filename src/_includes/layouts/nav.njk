@@ -1,0 +1,57 @@
+{# <div class="navbar bg-base-100 fixed top-0 z-50">
+  <div class="navbar-start">
+    <a href="/#front" class="btn btn-ghost normal-case text-md sm:text-xl">Merikratos Kouluttaa</a>
+  </div>
+  <div class="navbar-end hidden xs:flex">
+    <ul class="menu menu-horizontal p-0">
+      <li><a href="/#palvelut">Palvelut</a></li>
+      <li><a href="/#tuotteet">Verkkokoulutukset</a></li>
+      <li><a href="/#koulutusvideot">Koulutusvideot</a></li>
+    </ul>
+  </div>
+</div> #}
+
+
+<nav class="fixed top-0 z-50 w-full">
+  <div class="bg-gray-100 mt-4 md:mt-8 mx-4 md:mx-16 px-4 border-2 border-slate-200 shadow-xl rounded-xl">
+    <div class="flex justify-between">
+      <!-- logo -->
+      <div>
+        <a href="#" class="flex items-center py-5 px-2 text-blue-700">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" /></svg>
+         <span class="font-semibold">Merikratos Kouluttaa</span>
+        </a>
+      </div>
+      <!-- Primary Navigation -->
+      <div class="hidden md:flex items-center space-x-1 underline underline-offset-2 font-semibold decoration-2">
+        <a class="py-5 px-4 text-gray-700 hover:text-blue-700 transition ease-in-out hover:scale-110 " href="#">Palvelut</a>
+        <a class="py-5 px-4 text-gray-700 hover:text-blue-700 transition ease-in-out hover:scale-110 " href="#">Tuotteet</a>
+        <a class="py-5 px-4 text-gray-700 hover:text-blue-700 transition ease-in-out hover:scale-110 " href="#">Videot</a>
+      </div>
+      <!-- Secondary Navigation -->
+      <div class="hidden md:flex items-center space-x-1">
+        <a class="py-2 px-3 bg-blue-700 hover:text-blue-100 text-blue-200 transition duration-300 rounded shadow" href="#">Ota yhteyttä</a>
+      </div>
+       <!-- Mobile Menu -->
+      <div class="md:hidden flex items-center">
+      <button class="mobile-menu-button text-blue-700">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" /></svg>
+      </button>
+      </div>
+  </div>
+  </div>
+  <div class="mobile-menu hidden md:hidden bg-gray-100 text-blue-700 shadow-xl mx-4 py-3 -mt-3 rounded-br-xl rounded-bl-xl border-r-2 border-l-2 border-b-2 border-slate-200">
+    <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Palvelut</a>
+    <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Tuotteet</a>
+    <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Videot</a>
+  </div>
+</nav>
+
+<script>
+  const btn = document.querySelector('button.mobile-menu-button');
+  const menu = document.querySelector('.mobile-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle("hidden");
+  });
+</script>

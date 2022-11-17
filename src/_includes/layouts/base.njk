@@ -1,0 +1,19 @@
+{% include "layouts/head.njk" %}
+<body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
+
+{% include "layouts/nav.njk" %}
+{% include "partials/hero.njk" %}
+{% include "partials/topseparator.njk" %}
+
+
+<section class="bg-white flex flex-wrap justify-center">
+    {{ content | safe }}
+</section>
+
+  {% include "partials/services.njk" %}
+  {% include "partials/videos.njk" %}
+
+  {% include "partials/footerseparator.njk" %}
+  {% include "layouts/footer.njk" %}
+  </body>
+</html>

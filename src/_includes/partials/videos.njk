@@ -1,0 +1,55 @@
+<section id="koulutusvideot" class="bg-gray-100 pt-16">
+  <div class="container mx-auto px-2 pt-4 pb-4 text-gray-800">
+    <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+      Koulutusvideot
+    </h2>
+    <div class="w-full mb-4">
+      <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded"></div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-gray-100 flex flex-wrap flex-row justify-center pb-32">
+  {%- for post in collections.products %}
+
+
+  <a href="{{ post.url }}" class="relative block overflow-hidden rounded-xl shadow-xl w-4/5 max-w-3xl border border-gray-300 mt-8 mx-4 p-8 transition ease-in-out hover:-translate-y-1 hover:scale-105 hover:bg-emerald-100 hover:drop-shadow-lg duration-50">
+    <span
+      class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"></span>
+
+    <div class="justify-between sm:flex">
+      <div>
+        <h3 class="text-xl font-bold text-gray-900">
+          {{ post.data.title }}
+        </h3>
+
+        <p class="mt-1 text-sm font-medium text-gray-600">Kouluttaja <span class="font-bold text-gray-700">{{ post.data.educator }}</span></p>
+      </div>
+
+      <div class="ml-3 hidden flex-shrink-0 sm:block">
+        <img alt="{{ post.data.educator }} -henkilön kuva" src="/assets/avatar/sami.jpg" 
+        class="h-16 w-16 rounded-lg object-cover shadow-sm" />
+      </div>
+    </div>
+
+    <div class="mt-4 sm:pr-8">
+      <p class="text-sm text-gray-500">
+        {{ post.data.excerpt }}
+      </p>
+    </div>
+
+    <dl class="mt-6 flex">
+      <div class="flex flex-col-reverse">
+        <dt class="text-xs font-medium text-gray-600">Julkaisupäivämäärä</dt>
+        <dd class="text-sm font-bold text-gray-700">{{ post.data.releaseDate }}</dd>
+      </div>
+
+      <div class="ml-3 flex flex-col-reverse sm:ml-6">
+        <dt class="text-xs font-medium text-gray-600">Videon kesto</dt>
+        <dd class="text-sm font-bold text-gray-700">{{ post.data.length }}</dd>
+      </div>
+    </dl>
+  </a>
+
+  {% endfor -%}
+</section>
