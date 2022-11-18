@@ -13,4 +13,19 @@ module.exports = {
     }
   },
   plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      {
+        merikratos: {
+          primary: "#ff0000",
+          secondary: "#00ff00",
+          accent: "#0000ff",
+          neutral: "#ffac99",
+          "base-100": "#9a9a9a",
+          "base-500": "#767676",
+          "base-700": "#2e2e2e",
+        },
+      },
+      "light", "dark", "cupcake"],
+  },
 };
