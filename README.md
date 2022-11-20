@@ -1,6 +1,5 @@
-# Eleventy site
+# Merikratos Kouluttaa
 
-An Eleventy site for product and order information.
 
 ## Running
 
