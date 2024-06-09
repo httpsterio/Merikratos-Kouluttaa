@@ -3,3 +3,7 @@
 @tailwind utilities;
 
 html { scroll-behavior: smooth; }
+
+.gradient {
+  background: linear-gradient(180deg, #feedc5 0%, #ffffff 100%);
+}

@@ -1,0 +1,46 @@
+<nav class="mt-0 z-50 w-full">
+  <div class="bg-white px-4">
+    <div class="flex justify-between">
+      <!-- logo -->
+      <div>
+        <a href="#" class="flex items-center py-5 px-2 text-primary">
+         <span class="font-semibold text-2xl">Merikratos Kouluttaa</span>
+        </a>
+      </div>
+      <!-- Primary Navigation -->
+      <div class="hidden md:flex items-center space-x-1 font-semibold">
+        <a class="py-5 px-4 text-gray-700 hover:text-secondary" href="#">Palvelut</a>
+        <a class="py-5 px-4 text-gray-700 hover:text-secondary" href="#">Tuotteet</a>
+        <a class="py-5 px-4 text-gray-700 hover:text-secondary" href="#">Videot</a>
+      </div>
+      <!-- Secondary Navigation -->
+      <div class="hidden md:flex items-center space-x-1">
+      </div>
+       <!-- Mobile Menu -->
+      <div class="md:hidden flex items-center">
+      <button class="mobile-menu-button text-secondary">
+        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 18H10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M4 12L16 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M4 6L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      </div>
+  </div>
+  </div>
+  <div class="mobile-menu hidden md:hidden bg-white text-base-content font-semibold shadow-xl py-3 rounded-br-md rounded-bl-md border-r-2 border-l-2 border-b-2 border-slate-200">
+    <a href="#" class="block py-2 px-4 text-sm hover:bg-primary">Palvelut</a>
+    <a href="#" class="block py-2 px-4 text-sm hover:bg-primary">Tuotteet</a>
+    <a href="#" class="block py-2 px-4 text-sm hover:bg-primary">Videot</a>
+  </div>
+</nav>
+
+<script>
+  const btn = document.querySelector('button.mobile-menu-button');
+  const menu = document.querySelector('.mobile-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle("hidden");
+  });
+</script>

@@ -12,20 +12,22 @@ module.exports = {
       '2xl': '1536px',
     }
   },
-  plugins: [require("daisyui")],
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
   daisyui: {
+    base: true,
+    styled: true,
+    utils: true,
+    themeRoot: ":root",
     themes: [
       {
         merikratos: {
-          primary: "#ff0000",
-          secondary: "#00ff00",
-          accent: "#0000ff",
-          neutral: "#ffac99",
-          "base-100": "#9a9a9a",
-          "base-500": "#767676",
-          "base-700": "#2e2e2e",
+          "primary": "#fdc627",
+          "secondary": "#cb6040",
+          // "accent": "#37cdbe",
+          "neutral": "#fdf0d8",
+          "neutral-alt": "#fff9ec",
         },
       },
-      "light", "dark", "cupcake"],
+    ],
   },
 };
