@@ -1,0 +1,16 @@
+{% include "partials/head.njk" %}
+
+{% include "partials/nav.njk" %}
+
+
+<section class="bg-white flex flex-wrap flex-col justify-center pb-32 items-center">
+  <h1 class="w-full my-16 text-3xl font-bold leading-tight text-center text-gray-800">{{title}}</h1>
+  <div class="w-full max-w-6xl">
+    {{ embedHtml | safe }}
+  </div>
+  <div class="w-full max-w-6xl">
+    {{ content | safe }}
+  </div>
+</section>
+
+  {% include "partials/footer.njk" %}

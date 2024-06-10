@@ -9,7 +9,7 @@ module.exports = () => ({
 
       const hi = new Hashids(data.metadata.customerPermalinkSalt);
 
-      return `/customers/${hi.encode(fileSlug)}/`;
+      return `/order/${hi.encode(fileSlug)}/`;
     },
     available: (data) => {
       const { expires } = data;
@@ -32,10 +32,6 @@ module.exports = () => ({
 
       if (product === undefined) {
         throw new Error(`Unknown product ID: ${data.productId}`);
-      }
-
-      if (product.data.embedHtml !== undefined) {
-        return product.data.embedHtml;
       }
 
       return `<p><a href="${product.data.targetUrl}">Open</a></p>`;
