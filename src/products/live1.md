@@ -1,6 +1,6 @@
 ---
 title: "Livekoulutus 1"
-embedHtml: "<p>The HTML embed <i>would</i> go <b>here</b>.</p>"
+embedHtml: ""
 excerpt: "Huikean hieno koulutus"
 educator: "Sami Mäkelä"
 avatar: "sami"
@@ -9,4 +9,8 @@ length: "120 min"
 type: live
 ---
 
-This is why you should buy the product.
+Koulutuksen kuvaus tähän.
+
+Ostolinkki tähän jne jne.
+
+<button class="btn btn-active btn-primary">Osta nyt!</button>
